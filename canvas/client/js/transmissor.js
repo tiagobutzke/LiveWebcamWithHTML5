@@ -54,8 +54,8 @@ if (hasGetUserMedia()) {
         }
     }
     
-    cw = 120;
-    ch = 200;
+    cw = video.clientWidth;
+    ch = video.clientHeight;
     back.width = cw;
     back.height = ch;
     draw(video, backcontext, cw, ch);
