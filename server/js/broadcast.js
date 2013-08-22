@@ -6,9 +6,10 @@ var server = new ws({port: 8080});
 clients = [];
 
 server.on("connection", function(websocket) {
-    clients.push(ws);
+    clients.push(websocket);
 
     websocket.on('message', function(data) {
+        console.log(clients.length);
         for (var i = 1; i < clients.length; i++) {
            clients[i].send(data);
         }

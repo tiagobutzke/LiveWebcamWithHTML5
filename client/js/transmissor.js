@@ -70,7 +70,6 @@ if (hasGetUserMedia()) {
         setTimeout(function() { draw(v, bc, w, h) });
     }
     
-    alert('OK');
 } else {
     alert('getUserMedia() is not supported in your browser!');
 }
