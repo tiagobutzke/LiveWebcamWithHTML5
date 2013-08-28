@@ -7,20 +7,20 @@ In this case, I'm geting live video and taking snapshots. And a pooling send a c
 This case is fully functional now.
 
 ### To RUN
-Install Node.js: 
+#### Install Node.js: 
 http://nodejs.org/
 
-Install NPM: 
+#### Install NPM: 
 https://npmjs.org/
 
-Install modules:
+#### Install modules:
 `npm install util`
 `npm install ws`
 
-Run server side:
-node LiveWebcamWithHTML5/canvas/server/js/broadcast.js
+#### Run server side:
+`node LiveWebcamWithHTML5/canvas/server/js/broadcast.js`
 
-Run client transmissor and receptors:
+#### Run client transmissor and receptors:
 http://localhost/LiveWebcamWithHTML5/canvas/client/transmissor.html
 http://localhost/LiveWebcamWithHTML5/canvas/client/receptor.html
 
