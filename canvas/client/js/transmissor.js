@@ -8,8 +8,13 @@ function hasGetUserMedia() {
 
 var video = document.getElementById('sourcevid');
 
+navigator.getMedia = ( navigator.getUserMedia ||
+                       navigator.webkitGetUserMedia ||
+                       navigator.mozGetUserMedia ||
+                       navigator.msGetUserMedia);
+
 if (hasGetUserMedia()) {
-    navigator.webkitGetUserMedia(
+    navigator.getMedia(
         {video: true, audio: false}, 
         function (localMediaStream) {
             video.src = window.URL.createObjectURL(localMediaStream);
@@ -73,4 +78,3 @@ if (hasGetUserMedia()) {
 } else {
     alert('getUserMedia() is not supported in your browser!');
 }
-
